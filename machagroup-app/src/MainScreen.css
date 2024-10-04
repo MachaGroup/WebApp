@@ -45,11 +45,13 @@
     border: 2px solid #dcdcdc;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    color: #3a3a3a;
+    transition: background-color 0.3s, color 0.3s;
   }
   
   .buttons-container button:hover {
     background-color: #b0d3e6;
+    color: #3a3a3a;
   }
   
   /* Footer styling */

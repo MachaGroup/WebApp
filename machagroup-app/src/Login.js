@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Login.css';  // We will style it later
+import './Login.css';  // Assume the CSS is already updated
+import logo from './assets/MachaLogo.png';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -12,8 +13,16 @@ function Login() {
     console.log('Password:', password);
   };
 
+  const handleCreateAccount = () => {
+    // Add logic for handling account creation
+    console.log('Redirect to Create Account');
+  };
+
   return (
     <div className="login-container">
+      {/* Logo image */}
+      <img src={logo} alt="Logo" className="logo" />
+
       <h1>Login</h1>
       <form onSubmit={handleLogin}>
         <div className="form-group">
@@ -38,14 +47,15 @@ function Login() {
           />
         </div>
 
-        <p> or </p>
-
         <button type="submit">Login</button>
-      
-        <button type="submit">Create and Account</button>
-        
+
+        {/* or text */}
+        <p className="or-text">or</p>
+
+        {/* Create Account button */}
+        <button type="button" onClick={handleCreateAccount}>Create an Account</button>
       </form>
-      <p>Don't have an account? <a href="#signup">Sign up</a></p>
+
     </div>
   );
 }

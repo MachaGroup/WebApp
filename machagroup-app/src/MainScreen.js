@@ -22,7 +22,7 @@ function MainScreen() {
       </div>
 
       <footer>
-        <a href="#logout">Log out</a>
+    
       </footer>
     </div>
   );
