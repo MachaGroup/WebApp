@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';  // Assume the CSS is already updated
-import logo from './assets/MachaLogo.png';
+import logo from '../assets/MachaLogo.png';
 
 function Login() {
   const [email, setEmail] = useState('');
