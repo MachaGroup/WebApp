@@ -10,7 +10,9 @@ import FAQ from './Screens/FAQ';
 import ContactUs from './Screens/ContactUs';
 import Settings from './Screens/Settings';
 import Pricing from './Screens/Pricing';
-
+import PhysicalSecurity from './Screens/PhysicalSecurity';
+import AccessControl from './Screens/AccessControl';
+import SurveillanceSystems from './Screens/SurveillanceSystems';
 function App() {
   return (
     <Router>
@@ -27,6 +29,9 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Settings" element={<Settings />} />
         <Route path="/Pricing" element={<Pricing />} />
+        <Route path="/Physical" element={<PhysicalSecurity />} />
+        <Route path="/Access" element={<AccessControl />} />
+        <Route path="/Surveillance" element={<SurveillanceSystems />} />
       </Routes>
     </Router>
   );
