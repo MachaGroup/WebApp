@@ -7,6 +7,10 @@ function Settings() {
   const navigate = useNavigate();  // Initialize useNavigate hook
   const [profilePic, setProfilePic] = useState(null); // Start with no picture, null by default
 
+  const navigateTo = (path) => {
+    navigate(path);  // Use navigate to navigate to the specified route
+  };
+
   // Handle back navigation
   const handleBack = () => {
     navigate(-1);  // Navigate back to the previous page
@@ -59,8 +63,8 @@ function Settings() {
 
         {/* Settings Options */}
         <div className="settings-options">
-          <button className="settings-button">Edit Profile</button>
-          <button className="settings-button">Notifications</button>
+          <button className="settings-button" onClick={() => navigateTo('/editprofile')}>Edit Profile</button>
+          <button className="settings-button" onClick={() => navigateTo('/notifications')}>Notifications</button>
           <button className="settings-button">Privacy & Security</button>
           <button className="settings-button">Contact Us</button>
         </div>

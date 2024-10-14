@@ -16,9 +16,33 @@ function FormPage() {
     // Add logic for handling form submission
   };
 
+  // Modify handleButtonClick to navigate to different routes
   const handleButtonClick = (section) => {
-    console.log(`Button clicked for: ${section}`);
-    // Add logic for handling button click, e.g., open a modal or navigate
+    switch(section) {
+      case 'Physical Security':
+        navigate('/Physical');
+        break;
+      case 'Emergency Preparedness':
+        navigate('/emergency-preparedness');
+        break;
+      case 'Personnel Training and Awareness':
+        navigate('/personnel-training');
+        break;
+      case 'Cybersecurity':
+        navigate('/cybersecurity');
+        break;
+      case 'Policy and Compliance':
+        navigate('/policy-compliance');
+        break;
+      case 'Community Partnership':
+        navigate('/community-partnership');
+        break;
+      case 'Continuous Improvement - Safety and Security':
+        navigate('/continuous-improvement');
+        break;
+      default:
+        console.log('Unknown section');
+    }
   };
 
   return (
@@ -36,13 +60,13 @@ function FormPage() {
         <form onSubmit={handleSubmit}>
           {/* Form Buttons */}
           {[
-            'Windows Section',
-            'Walls Section',
-            'Classroom Section',
-            'Hallway Section (Placeholder)',
-            'Hallway Section (Placeholder)',
-            'Hallway Section (Placeholder)',
-            'Hallway Section (Placeholder)'
+            'Physical Security',
+            'Emergency Preparedness',
+            'Personnel Training and Awareness',
+            'Cybersecurity',
+            'Policy and Compliance',
+            'Community Partnership',
+            'Continuous Improvement - Safety and Security'
           ].map((section, index) => (
             <div key={index} className="form-section">
               <label>{section}</label>
@@ -56,7 +80,8 @@ function FormPage() {
             </div>
           ))}
 
-          {/* Submit Button */}
+          {/* Save and Submit Buttons */}
+          <button type="button" className="save-button">Save</button>
           <button type="submit" className="submit-button">Submit</button>
         </form>
       </main>
