@@ -15,8 +15,8 @@ function PhysicalSecurityPage() {
       case 'Surveillance Systems':
         navigate('/surveillance');
         break;
-      //case 'Security Personnel':
-        //navigate('/security-personnel');
+      case 'Security Personnel':
+        navigate('/Security');
         break;
       default:
         console.log('Unknown section');
