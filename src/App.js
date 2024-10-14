@@ -19,8 +19,24 @@ import SecurityPersonnel from './Screens/SecurityPersonnel';
 import EmergencyPreparedness from './Screens/EmergencyPreparedness';
 import EmergencyResponse from './Screens/EmergencyResponse';
 import EmergencyResponsePlan from './Screens/EmergencyResponsePlan';
+import DrillsAndTraining from './Screens/DrillsAndTraining';
+import CommunicationSystems from './Screens/CommunicationSystems';
 import PersonnelTrainingAndAwareness from './Screens/PersonnelTrainingAndAwareness';
 import Cybersecurity from './Screens/Cybersecurity';
+import CrisisIntervention from './Screens/CrisisIntervention';
+import PlanDevelopment from './Screens/PlanDevelopment';
+import DrillExecution from './Screens/DrillExecution';
+import AlertSystems from './Screens/AlertSystems';
+import CommunicationProtocols from './Screens/CommunicationProtocols';
+import FireEmergencyPlans from './Screens/FireEmergencyPlans';
+import LockdownProcedures from './Screens/LockdownProcedures';
+import NaturalDisasterPlans from './Screens/NaturalDisasterPlans';
+import NaturalDisasterDrills from './Screens/NaturalDisasterDrills';
+import LockdownDrills from './Screens/LockdownDrills';
+import PublicAddressSystem from './Screens/PublicAddressSystem';
+import TextEmailAlerts from './Screens/TextEmailAlerts';
+import StaffCommunication from './Screens/StaffCommunication';
+import ParentCommunication from './Screens/ParentCommunication';
 
 function App() {
   return (
@@ -47,8 +63,24 @@ function App() {
         <Route path="/emergency-preparedness" element={<EmergencyPreparedness />} />
         <Route path="/emergency-response" element={<EmergencyResponse />} />
         <Route path="/emergency-response-plan" element={<EmergencyResponsePlan />} />
+        <Route path="/drills-and-training" element={<DrillsAndTraining />} />
+        <Route path="/communication-systems" element={<CommunicationSystems />} />
         <Route path="/personnel-training" element={<PersonnelTrainingAndAwareness />} />
         <Route path="/cybersecurity" element={<Cybersecurity />} />
+        <Route path="/crisis-intervention" element={<CrisisIntervention />} />
+        <Route path="/plan-development" element={<PlanDevelopment />} />
+        <Route path="/drill-execution" element={<DrillExecution />} />
+        <Route path="/alert-systems" element={<AlertSystems />} />
+        <Route path="/communication-protocols" element={<CommunicationProtocols />} />
+        <Route path="/fire-emergency-plans" element={<FireEmergencyPlans />} />
+        <Route path="/lockdown-procedures" element={<LockdownProcedures />} />
+        <Route path="/natural-disaster-plans" element={<NaturalDisasterPlans />} />
+        <Route path="/natural-disaster-drills" element={<NaturalDisasterDrills />} />
+        <Route path="/lockdown-drills" element={<LockdownDrills />} />
+        <Route path="/public-address-system" element={<PublicAddressSystem />} />
+        <Route path="/text-email-alerts" element={<TextEmailAlerts />} />
+        <Route path="/staff-communication" element={<StaffCommunication />} />
+        <Route path="/parent-communication" element={<ParentCommunication />} />
       </Routes>
     </Router>
   );

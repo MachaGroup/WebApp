@@ -1,22 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';  // Import useNavigate for navigation
 import './AccessControl.css'; // Reuse the same CSS file for consistency in styling
 import logo from '../assets/MachaLogo.png';  // Adjust the path relative to the current file location
 
-function EmergencyResponsePlanPage() {
-  const navigate = useNavigate();  // Initialize useNavigate hook
-
+function ParentCommunicationPage() {
   const handleButtonClick = (section) => {
     console.log(`Button clicked for: ${section}`);
     // Add logic for handling button click, e.g., open a modal or navigate
-
-    switch (section) {
-      case 'Plan Development':
-          navigate('/plan-development');
-          break;
-      default:
-          console.log('Unknown section');
-  }
   };
 
   return (
@@ -28,12 +17,12 @@ function EmergencyResponsePlanPage() {
         <img src={logo} alt="Logo" className="logo" />
       </header>
 
-      {/* Emergency Response Plan Section */}
+      {/* Parent Communication Section */}
       <main className="form-container">
-        <h2>Emergency Response Plan</h2>
+        <h2>Parent Communication</h2>
         <form>
-          {/* Emergency Response Plan Buttons */}
-          {['Plan Development'].map((section, index) => (
+          {/* Parent Comunniation Buttons */}
+          {['Communiation Platforms', 'Parent Notification Procedures', 'Communication Language'].map((section, index) => (
             <div key={index} className="form-section">
               <label>{section}</label>
               <button type="button" className="form-button" onClick={() => handleButtonClick(section)}>
@@ -47,4 +36,4 @@ function EmergencyResponsePlanPage() {
   );
 }
 
-export default EmergencyResponsePlanPage;
+export default ParentCommunicationPage;

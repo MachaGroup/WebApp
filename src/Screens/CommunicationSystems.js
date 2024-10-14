@@ -1,32 +1,25 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';  // Import useNavigate for navigation
-import './PhysicalSecurity.css'; // Reuse the same CSS file for consistency in styling
+import './AccessControl.css'; // Reuse the same CSS file for consistency in styling
 import logo from '../assets/MachaLogo.png';  // Adjust the path relative to the current file location
 
-function PersonnelTrainingAndAwarenessPage() {
+function CommunicationSystemsPage() {
   const navigate = useNavigate();  // Initialize useNavigate hook
-
+  
   const handleButtonClick = (section) => {
-    // Navigate to specific routes based on section
+    console.log(`Button clicked for: ${section}`);
+    // Add logic for handling button click, e.g., open a modal or navigate
+
     switch (section) {
-      case 'Staff Training':
-        navigate('/staff-training');
-        break;
-      case 'Student Education':
-        navigate('/student-education');
-        break;
-      case 'Community Engagement':
-        navigate('/community-engagement');
-        break;
-        case 'Personnel Training and Awareness':
-        navigate('/personnel-training');
-        break;
-      case 'Student Education':
-        navigate('/surveillance');
-        break;
+      case 'Alert Systems':
+          navigate('/alert-systems');
+          break;
+      case 'Communication Protocols':
+          navigate('/communication-protocols');
+          break;
       default:
-        console.log('Unknown section');
-    }
+          console.log('Unknown section');
+  }
   };
 
   return (
@@ -38,12 +31,12 @@ function PersonnelTrainingAndAwarenessPage() {
         <img src={logo} alt="Logo" className="logo" />
       </header>
 
-      {/* Personnel Training and Awareness Section */}
+      {/* Communication Systems Section */}
       <main className="form-container">
-        <h2>Personnel Training and Awareness</h2>
+        <h2>Communication Systems</h2>
         <form>
-          {/* Personnel Training and Awareness Buttons */}
-          {['Staff Training', 'Student Education', 'Community Engagement', 'Personnel Training and Awareness', 'Student Education'].map((section, index) => (
+          {/* Communication Systems Buttons */}
+          {['Alert Systems', 'Communication Protocols'].map((section, index) => (
             <div key={index} className="form-section">
               <label>{section}</label>
               <button type="button" className="form-button" onClick={() => handleButtonClick(section)}>
@@ -57,4 +50,4 @@ function PersonnelTrainingAndAwarenessPage() {
   );
 }
 
-export default PersonnelTrainingAndAwarenessPage;
+export default CommunicationSystemsPage;

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';  // Import useNavigate for navig
 import './AccessControl.css'; // Reuse the same CSS file for consistency in styling
 import logo from '../assets/MachaLogo.png';  // Adjust the path relative to the current file location
 
-function EmergencyResponsePlanPage() {
+function DrillExecutionPage() {
   const navigate = useNavigate();  // Initialize useNavigate hook
 
   const handleButtonClick = (section) => {
@@ -11,9 +11,24 @@ function EmergencyResponsePlanPage() {
     // Add logic for handling button click, e.g., open a modal or navigate
 
     switch (section) {
-      case 'Plan Development':
-          navigate('/plan-development');
+      case 'Natural Disaster Drills':
+          navigate('/natural-disaster-drills');
           break;
+      case 'Lockdown Drills':
+          navigate('/lockdown-drills');
+          break;
+      case 'Staff Roles and Responsibilities':
+          navigate('/staff-roles-and-responsibilites');
+          break;
+      case 'Debriefing and Feedback':
+          navigate('/debriefing-and-feedback');
+          break;
+      case 'Evacuation Routes Review':
+          navigate('/evacuation-routes-review');
+          break;
+      case 'Drill Frequency':
+            navigate('/drill-frequency');
+            break;
       default:
           console.log('Unknown section');
   }
@@ -28,12 +43,12 @@ function EmergencyResponsePlanPage() {
         <img src={logo} alt="Logo" className="logo" />
       </header>
 
-      {/* Emergency Response Plan Section */}
+      {/* Drill Execution Section */}
       <main className="form-container">
-        <h2>Emergency Response Plan</h2>
+        <h2>Drill Execution</h2>
         <form>
-          {/* Emergency Response Plan Buttons */}
-          {['Plan Development'].map((section, index) => (
+          {/* Drill Execution Buttons */}
+          {['Natural Disaster Drills', 'Lockdown Drills', 'Staff Roles and Responsibilities', 'Debriefing and Feedback', 'Evacuation Routes Review', 'Drill Frequency'].map((section, index) => (
             <div key={index} className="form-section">
               <label>{section}</label>
               <button type="button" className="form-button" onClick={() => handleButtonClick(section)}>
@@ -47,4 +62,4 @@ function EmergencyResponsePlanPage() {
   );
 }
 
-export default EmergencyResponsePlanPage;
+export default DrillExecutionPage;
