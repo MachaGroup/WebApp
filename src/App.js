@@ -37,6 +37,24 @@ import PublicAddressSystem from './Screens/PublicAddressSystem';
 import TextEmailAlerts from './Screens/TextEmailAlerts';
 import StaffCommunication from './Screens/StaffCommunication';
 import ParentCommunication from './Screens/ParentCommunication';
+import CommunityEngagement from './Screens/CommunityEngagement';
+import StaffTraining from './Screens/StaffTraining';
+import StudentEducation from './Screens/StudentEducation';
+import FirstAidCPRTraining from './Screens/FirstAidCPRTraining';
+import EmergencyResponseTraining from './Screens/EmergencyResponseTraining';
+import EmergencyProcedures from './Screens/EmergencyProcedures';
+import SafetyEducation from './Screens/SafetyEducation';
+import PersonalSafety from './Screens/PersonalSafety';
+import ParentInvolvement from './Screens/ParentInvolvement';
+import CommunityPartnerships from './Screens/CommunityPartnerships';
+import SecurityAwarenessTraining from './Screens/SecurityAwarenessTraining';
+import BullyingPrevention from './Screens/BullyingPrevention';
+import ParentEducationEvents from './Screens/ParentEducationEvents';
+import ParentComm from './Screens/ParentComm';
+import CollaborationWithLocalAgenices from './Screens/CollaborationWithLocalAgencies';
+import AccessToCommunityResources from './Screens/AccessToCommunityResources';
+import RecognizingBullyingBehavoir from './Screens/RecognizingBullyingBehavior';
+import ReportingProcedures from './Screens/ReportingProcedures';
 
 function App() {
   return (
@@ -81,6 +99,24 @@ function App() {
         <Route path="/text-email-alerts" element={<TextEmailAlerts />} />
         <Route path="/staff-communication" element={<StaffCommunication />} />
         <Route path="/parent-communication" element={<ParentCommunication />} />
+        <Route path="/community-engagement" element={<CommunityEngagement />} />
+        <Route path="/staff-training" element={<StaffTraining />} />
+        <Route path="/student-education" element={<StudentEducation />} />
+        <Route path="/first-aid" element={<FirstAidCPRTraining />} />
+        <Route path="/emergency-response-training" element={<EmergencyResponseTraining />} />
+        <Route path="/emergency-procedures" element={<EmergencyProcedures />} />
+        <Route path="/personal-safety" element={<PersonalSafety />} />
+        <Route path="/safety-education" element={<SafetyEducation />} />
+        <Route path="/parent-involvement" element={<ParentInvolvement />} />
+        <Route path="/community-partnerships" element={<CommunityPartnerships />} />
+        <Route path="/security-awareness-training" element={<SecurityAwarenessTraining />} />
+        <Route path="/bullying-prevention" element={<BullyingPrevention />} />
+        <Route path="/parent-education-events" element={<ParentEducationEvents />} />
+        <Route path="/parent-comm" element={<ParentComm />} />
+        <Route path="/collaboration-with-local-agencies" element={<CollaborationWithLocalAgenices />} />
+        <Route path="/access-to-community-resources" element={<AccessToCommunityResources />} />
+        <Route path="/recognizing-bullying-behavior" element={<RecognizingBullyingBehavoir />} />
+        <Route path="/reporting-procedures" element={<ReportingProcedures />} />
       </Routes>
     </Router>
   );

@@ -1,26 +1,25 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';  // Import useNavigate for navigation
-import './PhysicalSecurity.css'; // Reuse the same CSS file for consistency in styling
+import './AccessControl.css'; // Reuse the same CSS file for consistency in styling
 import logo from '../assets/MachaLogo.png';  // Adjust the path relative to the current file location
 
-function PersonnelTrainingAndAwarenessPage() {
+function CommunityPartnershipsPage() {
   const navigate = useNavigate();  // Initialize useNavigate hook
 
   const handleButtonClick = (section) => {
-    // Navigate to specific routes based on section
+    console.log(`Button clicked for: ${section}`);
+    // Add logic for handling button click, e.g., open a modal or navigate
+
     switch (section) {
-      case 'Staff Training':
-        navigate('/staff-training');
-        break;
-      case 'Student Education':
-        navigate('/student-education');
-        break;
-      case 'Community Engagement':
-        navigate('/community-engagement');
-        break;
-      default:
-        console.log('Unknown section');
-    }
+        case 'Collaboration with Local Agencies coordination':
+            navigate('/collaboration-with-local-agencies-coordination');
+            break;
+        case 'Access to Community Resources':
+            navigate('/access-to-community-resources');
+            break;
+        default:
+          console.log('Unknown section');
+  }
   };
 
   return (
@@ -32,12 +31,12 @@ function PersonnelTrainingAndAwarenessPage() {
         <img src={logo} alt="Logo" className="logo" />
       </header>
 
-      {/* Personnel Training and Awareness Section */}
+      {/* Community Parentships Section */}
       <main className="form-container">
-        <h2>Personnel Training and Awareness</h2>
+        <h2>Community Partnerships</h2>
         <form>
-          {/* Personnel Training and Awareness Buttons */}
-          {['Staff Training', 'Student Education', 'Community Engagement'].map((section, index) => (
+          {/* Community Partnerships Buttons */}
+          {['Collaboration with Local Agencies coordination', 'Access to Community Resources'].map((section, index) => (
             <div key={index} className="form-section">
               <label>{section}</label>
               <button type="button" className="form-button" onClick={() => handleButtonClick(section)}>
@@ -51,4 +50,4 @@ function PersonnelTrainingAndAwarenessPage() {
   );
 }
 
-export default PersonnelTrainingAndAwarenessPage;
+export default CommunityPartnershipsPage;
