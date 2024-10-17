@@ -85,6 +85,28 @@ import ContainmentAndMitigation from './Screens/ContainmentAndMitigation';
 import PasswordSecurity from './Screens/PasswordSecurity';
 import SecurityPoliciesAndProcedures from './Screens/SecurityPoliciesAndProcedures';
 import IncidentResponseTraining from './Screens/IncidentResponseTraining';
+import PolicyAndCompliance from './Screens/PolicyAndCompliance';
+import PolicyDevelopment from './Screens/PolicyDevelopment';
+import ComplianceManagement from './Screens/ComplianceManagement';
+import Branch4 from './Screens/Branch4';
+import AcceptableUsePolicy from './Screens/AcceptableUsePolicy';
+import DataPrivacyPolicy from './Screens/DataPrivacyPolicy';
+import RegulatoryComlpiance from './Screens/RegulatoryCompliance';
+import LegalCompliance from './Screens/LegalCompliance';
+import PeriodicReviews from './Screens/PeriodicReviews';
+import RevisionProcedures from './Screens/RevisionProcedures';
+import InternetUsage from './Screens/InternetUsage';
+import DataHandling from './Screens/DataHandling';
+import DataCollectionAndRetention from './Screens/DataCollectionAndRetention';
+import DataProtectionMeasures from './Screens/DataProtectionMeasures';
+import FERPACompliance from './Screens/FERPACompliance';
+import HIPAACompliance from './Screens/HIPAACompliance';
+import GDPRCompliance from './Screens/GDPRCompliance';
+import CopyrightCompliance from './Screens/CopyrightCompliance';
+import AccessibilityCompliance from './Screens/AccessibilityCompliance';
+import PolicyEvaluationCriteria from './Screens/PolicyEvaluationCriteria';
+import StakeholderFeedback from './Screens/StakeholderFeedback';
+import ChangeManagementProcess from './Screens/ChangeManagementProcess';
 
 function App() {
   return (
@@ -177,6 +199,28 @@ function App() {
         <Route path="/password-security" element={<PasswordSecurity />} />
         <Route path="/security-policies-and-procedures" element={<SecurityPoliciesAndProcedures />} />
         <Route path="/incident-response-training" element={<IncidentResponseTraining />} />
+        <Route path="/policy-compliance" element={<PolicyAndCompliance />} />
+        <Route path="/policy-development" element={<PolicyDevelopment />} />
+        <Route path="/compliance-management" element={<ComplianceManagement />} />
+        <Route path="/branch-4" element={<Branch4 />} />
+        <Route path="/acceptable-use-policy" element={<AcceptableUsePolicy />} />
+        <Route path="/data-privacy-policy" element={<DataPrivacyPolicy />} />
+        <Route path="/regulatory-compliance" element={<RegulatoryComlpiance />} />
+        <Route path="/legal-compliance" element={<LegalCompliance />} />
+        <Route path="/periodic-reviews" element={<PeriodicReviews />} />
+        <Route path="/revision-procedures" element={<RevisionProcedures />} />
+        <Route path="/internet-usage" element={<InternetUsage />} />
+        <Route path="/data-handling" element={<DataHandling />} />
+        <Route path="/data-collection-and-retention" element={<DataCollectionAndRetention />} />
+        <Route path="/data-protection-measures" element={<DataProtectionMeasures />} />
+        <Route path="/FERPA-compliance" element={<FERPACompliance />} />
+        <Route path="/HIPAA-compliance" element={<HIPAACompliance />} />
+        <Route path="/GDPR-compliance" element={<GDPRCompliance />} />
+        <Route path="/copyright-compliance" element={<CopyrightCompliance />} />
+        <Route path="/accessibility-compliance" element={<AccessibilityCompliance />} />
+        <Route path="/policy-evaluation-criteria" element={<PolicyEvaluationCriteria />} />
+        <Route path="/stakeholder-feedback" element={<StakeholderFeedback />} />
+        <Route path="/change-management-process" element={<ChangeManagementProcess />} />
       </Routes>
     </Router>
   );
