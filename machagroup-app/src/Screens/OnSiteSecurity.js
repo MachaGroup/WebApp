@@ -1,22 +1,19 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';  // Import useNavigate for navigation
-import './AccessControl.css'; // Reuse the same CSS file for consistency in styling
+import './PhysicalSecurity.css'; // Reuse the same CSS file for consistency in styling
 import logo from '../assets/MachaLogo.png';  // Adjust the path relative to the current file location
 
-function AccessControlPage() {
+function OnSiteSecurityPage() {
   const navigate = useNavigate();  // Initialize useNavigate hook
 
   const handleButtonClick = (section) => {
     // Navigate to specific routes based on section
     switch (section) {
-      case 'Access Points':
-        navigate('/AccessP');
+      case 'Security Guards':
+        navigate('/Access');
         break;
-      case 'Perimeter Security':
-        navigate('/PerimeterS');
-        break;
-      case 'Building Security':
-        navigate('/BuildingS');
+      case 'Reception Staff':
+        navigate('/surveillance');
         break;
       default:
         console.log('Unknown section');
@@ -34,10 +31,10 @@ function AccessControlPage() {
 
       {/* Physical Security Section */}
       <main className="form-container">
-        <h2>Access Control</h2>
+        <h2>On-Site Security</h2>
         <form>
           {/* Physical Security Buttons */}
-          {['Access Points', 'Perimeter Security', 'Building Security'].map((section, index) => (
+          {['Security Guards','Reception Staff'].map((section, index) => (
             <div key={index} className="form-section">
               <label>{section}</label>
               <button type="button" className="form-button" onClick={() => handleButtonClick(section)}>
@@ -51,5 +48,5 @@ function AccessControlPage() {
   );
 }
 
-export default AccessControlPage;
+export default OnSiteSecurityPage;
 

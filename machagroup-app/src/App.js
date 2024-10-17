@@ -18,12 +18,12 @@ import AccessControl from './Screens/AccessControl';
 import SurveillanceSystems from './Screens/SurveillanceSystems';
 import SecurityPersonnel from './Screens/SecurityPersonnel';
 //Tier 3 PS
-//import AccessPoints from './AccessPoints';
-//import BuildingSecurity from './Building Security';
-//import PerimeterSecurity from './PerimeterSecurity';
-//import CCTVCameras from './CCTVCameras';
-//import AlarmSystems from './AlarmSystems';
-//import OnSiteSecurity from './OnSiteSecurity';
+import AccessPoints from './Screens/AccessPoints';
+import BuildingSecurity from './Screens/BuildingSecurity';
+import PerimeterSecurity from './Screens/PerimeterSecurity';
+import CCTVCameras from './Screens/CCTVCameras';
+import AlarmSystems from './Screens/AlarmSystems';
+import OnSiteSecurity from './Screens/OnSiteSecurity';
 //Tier 4 PS
 //import MainEntrance from './Screens/MainEntrance';
 //import SecondaryEntrance from './Screens/SecondaryEntrance';
@@ -57,6 +57,12 @@ function App() {
         <Route path="/Access" element={<AccessControl />} />
         <Route path="/Surveillance" element={<SurveillanceSystems />} />
         <Route path="/Security" element={<SecurityPersonnel />} />
+        <Route path="/AccessP" element={<AccessPoints />} />
+        <Route path="/PerimeterS" element={<PerimeterSecurity />} />
+        <Route path="/BuildingS" element={<BuildingSecurity />} />
+        <Route path="/CCTV" element={<CCTVCameras />} />
+        <Route path="/AlarmS" element={<AlarmSystems />} />
+        <Route path="/OnSite" element={<OnSiteSecurity />} />
       </Routes>
     </Router>
   );

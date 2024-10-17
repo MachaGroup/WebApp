@@ -10,7 +10,7 @@ function SecurityPersonnelPage() {
     // Navigate to specific routes based on section
     switch (section) {
       case 'On-Site Security':
-        navigate('/On-Site');
+        navigate('/OnSite');
         break;
       default:
         console.log('Unknown section');
