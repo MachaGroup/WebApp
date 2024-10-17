@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';  // Import useNavigate for navig
 import './AccessControl.css'; // Reuse the same CSS file for consistency in styling
 import logo from '../assets/MachaLogo.png';  // Adjust the path relative to the current file location
 
-function StaffTrainingPage() {
+function PasswordManagementPage() {
   const navigate = useNavigate();  // Initialize useNavigate hook
   
   const handleButtonClick = (section) => {
@@ -11,24 +11,18 @@ function StaffTrainingPage() {
     // Add logic for handling button click, e.g., open a modal or navigate
 
     switch (section) {
-        case 'First Aid/CPR Training':
-          navigate('/first-aid');
-          break;
-        case 'Emergency Response Training':
-          navigate('/emergency-response-training');
-          break;
-        case 'Emergency Communication':
-          navigate('/emergency-communication');
-          break;
-        case 'Security Policies and Procedures':
-          navigate('/security-policies-and-procedures');
-          break;
-        case 'Incident Response Training':
-          navigate('/incident-response-training');
-          break;
-        default:
+        case 'Password Policies':
+            navigate('/password-policies');
+            break;
+        case 'Multi-Factor Authentication':
+            navigate('/multi-factor-authentication');
+            break;
+          case 'Password Security':
+            navigate('/password-security');
+            break;
+      default:
           console.log('Unknown section');
-    }
+  }
   };
 
   return (
@@ -40,12 +34,12 @@ function StaffTrainingPage() {
         <img src={logo} alt="Logo" className="logo" />
       </header>
 
-      {/* Staff Training Section */}
+      {/* Password Management Section */}
       <main className="form-container">
-        <h2>Staff Training</h2>
+        <h2>Password Management</h2>
         <form>
-          {/* Staff Training Buttons */}
-          {['First Aid/CPR Training', 'Emergency Response Training', 'Emergency Communication', 'Security Policies and Procedures', 'Incident Response Training'].map((section, index) => (
+          {/* Password Management Buttons */}
+          {['Password Policies', 'Multi-Factor Authentication', 'Password Security'].map((section, index) => (
             <div key={index} className="form-section">
               <label>{section}</label>
               <button type="button" className="form-button" onClick={() => handleButtonClick(section)}>
@@ -59,4 +53,4 @@ function StaffTrainingPage() {
   );
 }
 
-export default StaffTrainingPage;
+export default PasswordManagementPage;

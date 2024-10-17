@@ -18,12 +18,6 @@ function CybersecurityPage() {
       case 'User Awareness and Training**':
         navigate('/user-awareness');
         break;
-        case 'Incident Response ?':
-        navigate('/incident-response');
-        break;
-        case 'Compliance and Regulations**':
-        navigate('/compliance-and-regulations');
-        break;
       default:
         console.log('Unknown section');
     }
@@ -43,7 +37,7 @@ function CybersecurityPage() {
         <h2>Cybersecurity</h2>
         <form>
           {/* Cybersecurity Buttons */}
-          {['Network Security', 'Data Protection', 'User Awareness and Training**', 'Incident Response ?','Compliance and Regulations**'].map((section, index) => (
+          {['Network Security', 'Data Protection', 'User Awareness and Training**'].map((section, index) => (
             <div key={index} className="form-section">
               <label>{section}</label>
               <button type="button" className="form-button" onClick={() => handleButtonClick(section)}>

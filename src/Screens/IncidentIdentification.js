@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';  // Import useNavigate for navig
 import './AccessControl.css'; // Reuse the same CSS file for consistency in styling
 import logo from '../assets/MachaLogo.png';  // Adjust the path relative to the current file location
 
-function StaffTrainingPage() {
+function IncidentIdentificationPage() {
   const navigate = useNavigate();  // Initialize useNavigate hook
   
   const handleButtonClick = (section) => {
@@ -11,24 +11,15 @@ function StaffTrainingPage() {
     // Add logic for handling button click, e.g., open a modal or navigate
 
     switch (section) {
-        case 'First Aid/CPR Training':
-          navigate('/first-aid');
-          break;
-        case 'Emergency Response Training':
-          navigate('/emergency-response-training');
-          break;
-        case 'Emergency Communication':
-          navigate('/emergency-communication');
-          break;
-        case 'Security Policies and Procedures':
-          navigate('/security-policies-and-procedures');
-          break;
-        case 'Incident Response Training':
-          navigate('/incident-response-training');
-          break;
-        default:
+        case 'Event Logging and Monitoring':
+            navigate('/event-logging');
+            break;
+        case 'User Activity Monitoring':
+            navigate('/user-activity-monitoring');
+            break;
+      default:
           console.log('Unknown section');
-    }
+  }
   };
 
   return (
@@ -40,12 +31,12 @@ function StaffTrainingPage() {
         <img src={logo} alt="Logo" className="logo" />
       </header>
 
-      {/* Staff Training Section */}
+      {/* Incident Identification Section */}
       <main className="form-container">
-        <h2>Staff Training</h2>
+        <h2>Incident Identification</h2>
         <form>
-          {/* Staff Training Buttons */}
-          {['First Aid/CPR Training', 'Emergency Response Training', 'Emergency Communication', 'Security Policies and Procedures', 'Incident Response Training'].map((section, index) => (
+          {/* Incident Identification Buttons */}
+          {['Event Logging and Monitoring', 'User Activity Monitoring'].map((section, index) => (
             <div key={index} className="form-section">
               <label>{section}</label>
               <button type="button" className="form-button" onClick={() => handleButtonClick(section)}>
@@ -59,4 +50,4 @@ function StaffTrainingPage() {
   );
 }
 
-export default StaffTrainingPage;
+export default IncidentIdentificationPage;

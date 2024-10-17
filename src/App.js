@@ -55,6 +55,36 @@ import CollaborationWithLocalAgenices from './Screens/CollaborationWithLocalAgen
 import AccessToCommunityResources from './Screens/AccessToCommunityResources';
 import RecognizingBullyingBehavoir from './Screens/RecognizingBullyingBehavior';
 import ReportingProcedures from './Screens/ReportingProcedures';
+import NetworkSecurity from './Screens/NetworkSecurity';
+import DataProtection from './Screens/DataProtection';
+import UserAwarenessAndTraining from './Screens/UserAwarenessAndTraining';
+import FirewallsAndIntrusionDetection from './Screens/FirewallsAndIntrusionDetection';
+import EndpointSecurity from './Screens/EndpointSecurity';
+import DataEncryption from './Screens/DataEncryption';
+import DataBackupAndRecovery from './Screens/DataBackupAndRecovery';
+import PhishingAwareness from './Screens/PhishingAwareness';
+import PasswordManagement from './Screens/PasswordManagement';
+import IncidentIdentification from './Screens/IncidentIdentification';
+import IncidentResponsePlanning from './Screens/IncidentResponsePlanning';
+import FirewallConfiguratinon from './Screens/FirewallConfiguration';
+import IntrusionDetectionSystems from './Screens/IntrusionDectecitonSystems';
+import AntivirusAndMalwareProtection from './Screens/AntivirusAndMalwareProtection';
+import DeviceManagement from './Screens/DeviceManagement';
+import FileEncryption from './Screens/FileEncryption';
+import EmailEncryption from './Screens/EmailEncryption';
+import BackupSolutions from './Screens/BackupSolutions';
+import DisasterRecoveryPlanning from './Screens/DisasterRecoveryPlanning';
+import PhishingSimulationTraining from './Screens/PhishingSimulationTraining';
+import ReportingProcedures2 from './Screens/ReportingProcedures2';
+import PasswordPolicies from './Screens/PasswordPolicies';
+import MultiFactorAuthentication from './Screens/MultiFactorAuthentication';
+import EventLoggingAndMonitoring from './Screens/EventLoggingAndMonitoring';
+import UserActivityMonitoring from './Screens/UserActivityMonitoring';
+import ResponseTeamFoundation from './Screens/ResponseTeamFoundation';
+import ContainmentAndMitigation from './Screens/ContainmentAndMitigation';
+import PasswordSecurity from './Screens/PasswordSecurity';
+import SecurityPoliciesAndProcedures from './Screens/SecurityPoliciesAndProcedures';
+import IncidentResponseTraining from './Screens/IncidentResponseTraining';
 
 function App() {
   return (
@@ -117,6 +147,36 @@ function App() {
         <Route path="/access-to-community-resources" element={<AccessToCommunityResources />} />
         <Route path="/recognizing-bullying-behavior" element={<RecognizingBullyingBehavoir />} />
         <Route path="/reporting-procedures" element={<ReportingProcedures />} />
+        <Route path="/network-security" element={<NetworkSecurity />} />
+        <Route path="/data-protection" element={<DataProtection />} />
+        <Route path="/user-awareness" element={<UserAwarenessAndTraining />} />
+        <Route path="/firewalls" element={<FirewallsAndIntrusionDetection />} />
+        <Route path="/endpoint-security" element={<EndpointSecurity />} />
+        <Route path="/data-encryption" element={<DataEncryption />} />
+        <Route path="/data-backup-and-recovery" element={<DataBackupAndRecovery />} />
+        <Route path="/phishing-awareness" element={<PhishingAwareness />} />
+        <Route path="/password-management" element={<PasswordManagement />} />
+        <Route path="/incident-identification" element={<IncidentIdentification />} />
+        <Route path="/incident-response-planning" element={<IncidentResponsePlanning />} />
+        <Route path="/firewall-configuration" element={<FirewallConfiguratinon />} />
+        <Route path="/intrusion-detection-systems" element={<IntrusionDetectionSystems />} />
+        <Route path="/antivirus-and-malware-protection" element={<AntivirusAndMalwareProtection />} />
+        <Route path="/device-management" element={<DeviceManagement />} />
+        <Route path="/file-encryption" element={<FileEncryption />} /> 
+        <Route path="/email-encryption" element={<EmailEncryption />} />
+        <Route path="/backup-solutions" element={<BackupSolutions />} />
+        <Route path="/disaster-recovery-planning" element={<DisasterRecoveryPlanning />} />
+        <Route path="/phishing-simulation-training" element={<PhishingSimulationTraining />} />
+        <Route path="/reporting-procedures2" element={<ReportingProcedures2 />} />
+        <Route path="/password-policies" element={<PasswordPolicies />} />
+        <Route path="/multi-factor-authentication" element={<MultiFactorAuthentication />} />
+        <Route path="/event-logging" element={<EventLoggingAndMonitoring />} />
+        <Route path="/user-activity-monitoring" element={<UserActivityMonitoring />} />
+        <Route path="/response-team-foundation" element={<ResponseTeamFoundation />} />
+        <Route path="/containment-and-mitigation" element={<ContainmentAndMitigation />} />
+        <Route path="/password-security" element={<PasswordSecurity />} />
+        <Route path="/security-policies-and-procedures" element={<SecurityPoliciesAndProcedures />} />
+        <Route path="/incident-response-training" element={<IncidentResponseTraining />} />
       </Routes>
     </Router>
   );
