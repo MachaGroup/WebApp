@@ -19,7 +19,7 @@ import SurveillanceSystems from './Screens/SurveillanceSystems';
 import SecurityPersonnel from './Screens/SecurityPersonnel';
 //Tier 3 PS
 import AccessPoints from './Screens/AccessPoints';
-import BuildingSecurity from './Screens/BuildingSecurity';
+import BuildingSecurity from './Screens/Building Security';
 import PerimeterSecurity from './Screens/PerimeterSecurity';
 import CCTVCameras from './Screens/CCTVCameras';
 import AlarmSystems from './Screens/AlarmSystems';

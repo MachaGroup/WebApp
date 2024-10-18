@@ -18,12 +18,12 @@ import AccessControl from './Screens/AccessControl';
 import SurveillanceSystems from './Screens/SurveillanceSystems';
 import SecurityPersonnel from './Screens/SecurityPersonnel';
 //Tier 3 PS
-import AccessPoints from './Screens/AccessPoints';
-import BuildingSecurity from './Screens/BuildingSecurity';
-import PerimeterSecurity from './Screens/PerimeterSecurity';
-import CCTVCameras from './Screens/CCTVCameras';
-import AlarmSystems from './Screens/AlarmSystems';
-import OnSiteSecurity from './Screens/OnSiteSecurity';
+import AccessPoints from './AccessPoints';
+import BuildingSecurity from './Building Security';
+import PerimeterSecurity from './PerimeterSecurity';
+import CCTVCameras from './CCTVCameras';
+import AlarmSystems from './AlarmSystems';
+import OnSiteSecurity from './OnSiteSecurity';
 //Tier 4 PS
 import MainEntrance from './Screens/MainEntrance';
 //import SecondaryEntrance from './Screens/SecondaryEntrance';
