@@ -107,6 +107,14 @@ import AccessibilityCompliance from './Screens/AccessibilityCompliance';
 import PolicyEvaluationCriteria from './Screens/PolicyEvaluationCriteria';
 import StakeholderFeedback from './Screens/StakeholderFeedback';
 import ChangeManagementProcess from './Screens/ChangeManagementProcess';
+import AccessPoints from './Screens/AccessPoints';
+import BuildingSecurity from './Screens/BuildingSecurity';
+import PerimeterSecurity from './Screens/PerimeterSecurity';
+import CCTVCameras from './Screens/CCTVCameras';
+import AlarmSystems from './Screens/AlarmSystems';
+import OnSiteSecurity from './Screens/OnSiteSecurity';
+//Tier 4 PS
+import MainEntrance from './Screens/MainEntrance';
 
 function App() {
   return (
@@ -221,6 +229,13 @@ function App() {
         <Route path="/policy-evaluation-criteria" element={<PolicyEvaluationCriteria />} />
         <Route path="/stakeholder-feedback" element={<StakeholderFeedback />} />
         <Route path="/change-management-process" element={<ChangeManagementProcess />} />
+        <Route path="/AccessP" element={<AccessPoints />} />
+        <Route path="/BuildingS" element={<BuildingSecurity />} />
+        <Route path="/PerimeterS" element={<PerimeterSecurity />} />
+        <Route path="/CCTV" element={<CCTVCameras />} />
+        <Route path="/AlarmS" element={<AlarmSystems />} />
+        <Route path="/OnSite" element={<OnSiteSecurity />} />
+        <Route path="/MainE" element={<MainEntrance />} />
       </Routes>
     </Router>
   );
