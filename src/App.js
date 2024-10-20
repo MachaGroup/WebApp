@@ -134,6 +134,26 @@ import BiometricScanners from "./Screens/BiometricScanners";
 import AccessControlSoftware from "./Screens/AccessControlSoftware";
 import PerimeterFencing from "./Screens/PerimeterFencing";
 import VehicleBarriers from "./Screens/VehicleBarriers";
+import RazorWire from "./Screens/RazorWire";
+import MotionActivatedLights from "./Screens/MotionActivatedLights";
+import Floodlights from "./Screens/Floodlights";
+import DoorLocks from "./Screens/DoorLocks";
+import WindowLocks from "./Screens/WindowLocks";
+import AccessControlKeypads from "./Screens/AccessControlKeypads";
+import DomeCameras from "./Screens/DomeCameras";
+import PTZCameras from "./Screens/PTZCameras";
+import BulletCameras from "./Screens/BulletCameras";
+import WeatherproofCameras from "./Screens/WeatherproofCameras";
+import InfraredCameras from "./Screens/InfraredCameras";
+import MotionSensors from "./Screens/MotionSensors";
+import GlassBreakSensors from "./Screens/GlassBreakSensors";
+import DoorAlarms from "./Screens/DoorAlarms";
+import FenceSensors from "./Screens/FenceSensors";
+import GateAlarms from "./Screens/GateAlarms";
+import OnSiteGuards from "./Screens/OnSiteGuards";
+import RovingPatrols from "./Screens/RovingPatrols";
+import FrontDeskSecurity from "./Screens/FrontDeskSecurity";
+import VisitorCheckin from "./Screens/VisitorCheckin";
 
 function App() {
   return (
@@ -275,6 +295,26 @@ function App() {
         <Route path="/AccessControlSoftware" element={<AccessControlSoftware />} />
         <Route path="/PerimeterFencing" element={<PerimeterFencing />} />
         <Route path="/VehicleBarriers" element={<VehicleBarriers />} />
+        <Route path="/RazorWire" element={<RazorWire />} />
+        <Route path="/MotionActivatedLights" element={<MotionActivatedLights />} />
+        <Route path="/Floodlights" element={<Floodlights />} />
+        <Route path="/DoorLocks" element={<DoorLocks />} />
+        <Route path="/WindowLocks" element={<WindowLocks />} />
+        <Route path="/AccessControlKeypads" element={<AccessControlKeypads />} />
+        <Route path="/DomeCameras" element={<DomeCameras />} />
+        <Route path="/PTZCameras" element={<PTZCameras />} />
+        <Route path="/BulletCameras" element={<BulletCameras />} />
+        <Route path="/WeatherproofCameras" element={<WeatherproofCameras />} />
+        <Route path="/InfraredCameras" element={<InfraredCameras />} />
+        <Route path="/MotionSensors" element={<MotionSensors />} />
+        <Route path="/GlassBreakSensors" element={<GlassBreakSensors />} />
+        <Route path="/DoorAlarms" element={<DoorAlarms />} />
+        <Route path="/FenceSensors" element={<FenceSensors />} />
+        <Route path="/GateAlarms" element={<GateAlarms />} />
+        <Route path="/OnSiteGuards" element={<OnSiteGuards />} />
+        <Route path="/RovingPatrols" element={<RovingPatrols />} />
+        <Route path="/FrontDeskSecurity" element={<FrontDeskSecurity />} />
+        <Route path="/VisitorCheckin" element={<VisitorCheckin />} />
       </Routes>
     </Router>
   );
