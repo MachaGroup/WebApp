@@ -115,6 +115,25 @@ import AlarmSystems from './Screens/AlarmSystems';
 import OnSiteSecurity from './Screens/OnSiteSecurity';
 //Tier 4 PS
 import MainEntrance from './Screens/MainEntrance';
+import SecondaryEntrances from './Screens/SecondaryEntrances';
+import FencingandBarriers from './Screens/FencingandBarriers';
+import LockingMechanisms from './Screens/LockingMechanisms';
+import Lighting from './Screens/Lighting';
+import IndoorCameras from './Screens/IndoorCameras';
+import OutdoorCameras from './Screens/OutdoorCameras';
+import IntrusionAlarms from './Screens/IntrusionAlarms';
+import PerimeterAlarms from './Screens/PerimeterAlarms';
+import SecurityGuards from './Screens/SecurityGuards';
+import ReceptionStaff from './Screens/ReceptionStaff';
+import SecurityGates from './Screens/SecurityGates';
+import Turnstiles from './Screens/Turnstiles';
+import AccessControlSystems from './Screens/AccessControlSystems';
+import StationedGuards from './Screens/StationedGuards';
+import CardReaders from "./Screens/CardReaders";
+import BiometricScanners from "./Screens/BiometricScanners";
+import AccessControlSoftware from "./Screens/AccessControlSoftware";
+import PerimeterFencing from "./Screens/PerimeterFencing";
+import VehicleBarriers from "./Screens/VehicleBarriers";
 
 function App() {
   return (
@@ -236,6 +255,26 @@ function App() {
         <Route path="/AlarmS" element={<AlarmSystems />} />
         <Route path="/OnSite" element={<OnSiteSecurity />} />
         <Route path="/MainE" element={<MainEntrance />} />
+        path="/SecondaryEntrances" element={<SecondaryEntrances />} />
+        <Route path="/FencingandBarriers" element={<FencingandBarriers />} />
+        <Route path="/LockingMechanisms" element={<LockingMechanisms />} />
+        <Route path="/Lighting" element={<Lighting />} />
+        <Route path="/IndoorCameras" element={<IndoorCameras />} />
+        <Route path="/OutdoorCameras" element={<OutdoorCameras />} />
+        <Route path="/IntrusionAlarms" element={<IntrusionAlarms />} />
+        <Route path="/PerimeterAlarms" element={<PerimeterAlarms />} />
+        <Route path="/SecurityGuards" element={<SecurityGuards />} />
+        <Route path="/SecurityPersonnel" element={<SecurityPersonnel />} />
+        <Route path="/ReceptionStaff" element={<ReceptionStaff />} />
+        <Route path="/SecurityGates" element={<SecurityGates />} />
+        <Route path="/Turnstiles" element={<Turnstiles />} />
+        <Route path="/AccessControlSystems" element={<AccessControlSystems />} />
+        <Route path="/StationedGuards" element={<StationedGuards />} />
+        <Route path="/CardReaders" element={<CardReaders />} />
+        <Route path="/BiometricScanners" element={<BiometricScanners />} />
+        <Route path="/AccessControlSoftware" element={<AccessControlSoftware />} />
+        <Route path="/PerimeterFencing" element={<PerimeterFencing />} />
+        <Route path="/VehicleBarriers" element={<VehicleBarriers />} />
       </Routes>
     </Router>
   );
