@@ -1,49 +1,217 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';  // Import useNavigate for navigation
 import './AccessControl.css'; // Reuse the same CSS file for consistency in styling
-import logo from '../assets/MachaLogo.png';  // Adjust the path relative to the current file location
+import logo from '../assets/MachaLogo.png';  // Adjust path as needed
+
+// section 9 
 
 function NetworkSecurityPage() {
-  const navigate = useNavigate();  // Initialize useNavigate hook
-  
   const handleButtonClick = (section) => {
     console.log(`Button clicked for: ${section}`);
-    // Add logic for handling button click, e.g., open a modal or navigate
-
-    switch (section) {
-        case 'Firewalls and Intrusion Detection':
-            navigate('/firewalls');
-            break;
-        case 'Endpoint Security':
-            navigate('/endpoint-security');
-            break;
-      default:
-          console.log('Unknown section');
-  }
+    // Add logic for handling button click, like opening a modal or navigating
   };
 
   return (
     <div className="form-page">
       {/* Header Section */}
       <header className="header">
-        <button className="back-button" onClick={() => window.history.back()}>←</button> {/* Use window.history.back for navigation */}
+        <button className="back-button" onClick={() => window.history.back()}>←</button> {/* Go back button */}
         <h1>The MACHA Group</h1>
         <img src={logo} alt="Logo" className="logo" />
       </header>
 
-      {/* Network Security Section */}
+      {/* Network Security Measures Section */}
       <main className="form-container">
-        <h2>Network Security</h2>
+        <h2>Network Security Measures</h2>
         <form>
-          {/* Network Security Buttons */}
-          {['Firewalls and Intrusion Detection','Endpoint Security'].map((section, index) => (
-            <div key={index} className="form-section">
-              <label>{section}</label>
-              <button type="button" className="form-button" onClick={() => handleButtonClick(section)}>
-                Enter Here
-              </button>
+          {/* Firewall Implementation and Configuration */}
+          <h3>Firewall Implementation and Configuration</h3>
+
+          <div className="form-section">
+            <label>What criteria are used to select and implement firewall solutions within the network?</label>
+            <div>
+              <input type="text" name="firewallSelectionCriteria" placeholder="Describe selection and implementation criteria" />
             </div>
-          ))}
+          </div>
+
+          <div className="form-section">
+            <label>How frequently is the firewall configuration reviewed and updated to address emerging threats?</label>
+            <div>
+              <input type="text" name="firewallReviewFrequency" placeholder="Describe review frequency for firewall configurations" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>What specific access control lists (ACLs) have been established to restrict unauthorized access through the firewall?</label>
+            <div>
+              <input type="text" name="firewallACLs" placeholder="Describe ACLs for firewall" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>How are firewall logs monitored for suspicious activity or potential breaches?</label>
+            <div>
+              <input type="text" name="firewallLogMonitoring" placeholder="Describe monitoring process for firewall logs" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>What training or resources are provided to staff responsible for managing and maintaining the firewall?</label>
+            <div>
+              <input type="text" name="firewallTraining" placeholder="Describe training for firewall management" />
+            </div>
+          </div>
+
+          {/* Intrusion Prevention Systems */}
+          <h3>Intrusion Prevention Systems</h3>
+
+          <div className="form-section">
+            <label>What criteria are used to select and implement intrusion prevention systems (IPS) within the network?</label>
+            <div>
+              <input type="text" name="ipsSelectionCriteria" placeholder="Describe IPS selection and implementation criteria" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>How are the IPS configurations tested to ensure effectiveness against various types of attacks?</label>
+            <div>
+              <input type="text" name="ipsTesting" placeholder="Describe testing process for IPS configurations" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>What methods are in place to regularly update the IPS with new threat signatures or rules?</label>
+            <div>
+              <input type="text" name="ipsUpdateMethods" placeholder="Describe methods for updating IPS" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>How does the organization monitor and respond to alerts generated by the IPS?</label>
+            <div>
+              <input type="text" name="ipsAlertResponse" placeholder="Describe monitoring and response to IPS alerts" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>What training is provided to staff on the capabilities and limitations of the IPS to ensure proper usage?</label>
+            <div>
+              <input type="text" name="ipsTraining" placeholder="Describe IPS training provided to staff" />
+            </div>
+          </div>
+
+          {/* Data Protection Measures */}
+          <h3>Data Protection Measures</h3>
+
+          <h4>Data Encryption Protocols</h4>
+          <div className="form-section">
+            <label>What types of data are prioritized for encryption, and what criteria determine this prioritization?</label>
+            <div>
+              <input type="text" name="encryptionPrioritization" placeholder="Describe criteria for data encryption prioritization" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>How are encryption keys managed and protected to prevent unauthorized access?</label>
+            <div>
+              <input type="text" name="encryptionKeyManagement" placeholder="Describe encryption key management processes" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>What encryption standards or protocols (e.g., AES, RSA) are implemented to secure data both in transit and at rest?</label>
+            <div>
+              <input type="text" name="encryptionStandards" placeholder="Describe encryption standards or protocols" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>How frequently are encryption methods reviewed and updated to address emerging threats or vulnerabilities?</label>
+            <div>
+              <input type="text" name="encryptionReviewFrequency" placeholder="Describe frequency of encryption method review" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>What processes are in place to ensure compliance with relevant regulations regarding data encryption?</label>
+            <div>
+              <input type="text" name="encryptionCompliance" placeholder="Describe compliance processes for data encryption" />
+            </div>
+          </div>
+
+          <h4>Regular Data Backups</h4>
+          <div className="form-section">
+            <label>What is the frequency of data backups (e.g., daily, weekly, monthly), and how is this schedule determined?</label>
+            <div>
+              <input type="text" name="backupFrequency" placeholder="Describe data backup frequency and rationale" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>What types of data are included in the backup process, and are there any exclusions?</label>
+            <div>
+              <input type="text" name="backupDataTypes" placeholder="Describe types of data included in backups" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>How are backup data stored, and what measures are in place to ensure the security of these backups?</label>
+            <div>
+              <input type="text" name="backupStorageSecurity" placeholder="Describe backup data storage and security" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>What testing procedures are conducted to verify the integrity and recoverability of backup data?</label>
+            <div>
+              <input type="text" name="backupTesting" placeholder="Describe testing procedures for backup integrity" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>How is the backup process documented, and who is responsible for overseeing it?</label>
+            <div>
+              <input type="text" name="backupDocumentation" placeholder="Describe documentation and oversight for backups" />
+            </div>
+          </div>
+
+          <h4>Endpoint Security Solutions</h4>
+          <div className="form-section">
+            <label>What types of endpoint security solutions are currently implemented (e.g., antivirus, anti-malware, encryption)?</label>
+            <div>
+              <input type="text" name="endpointSecurityTypes" placeholder="Describe types of endpoint security solutions" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>How are endpoint security solutions configured to ensure they are effective against evolving threats?</label>
+            <div>
+              <input type="text" name="endpointSecurityConfiguration" placeholder="Describe configuration process for endpoint security" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>What processes are in place for monitoring and managing endpoint security alerts and incidents?</label>
+            <div>
+              <input type="text" name="endpointSecurityMonitoring" placeholder="Describe monitoring and management processes for alerts" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>How often are endpoint security solutions updated or patched to protect against new vulnerabilities?</label>
+            <div>
+              <input type="text" name="endpointSecurityUpdates" placeholder="Describe frequency of updates or patches for endpoint security" />
+            </div>
+          </div>
+
+          <div className="form-section">
+            <label>What training or resources are provided to staff regarding the importance of endpoint security and safe practices?</label>
+            <div>
+              <input type="text" name="endpointSecurityTraining" placeholder="Describe training for endpoint security awareness" />
+            </div>
+          </div>
+
+          {/* Submit Button */}
+          <button type="submit" className="submit-button">Submit</button>
         </form>
       </main>
     </div>

@@ -2,6 +2,8 @@ import React from 'react';
 import './AccessControl.css'; // Reuse the same CSS file for consistency in styling
 import logo from '../assets/MachaLogo.png';  // Adjust the path relative to the current file location
 
+// this is likely in FirePrevention.js 
+
 function FireEmergencyPlansPage() {
   const handleButtonClick = (section) => {
     console.log(`Button clicked for: ${section}`);

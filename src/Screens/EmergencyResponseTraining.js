@@ -2,6 +2,8 @@ import React from 'react';
 import './AccessControl.css'; // Reuse the same CSS file for consistency in styling
 import logo from '../assets/MachaLogo.png';  // Adjust the path relative to the current file location
 
+// section 8, might not need this page as its combined with SchoolResourceOffiers
+
 function EmergencyResponseTrainingPage() {
   const handleButtonClick = (section) => {
     console.log(`Button clicked for: ${section}`);
